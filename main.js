@@ -61,9 +61,6 @@ function deleteIssue(id){
 function fetchIssues() {
     var issues = JSON.parse(localStorage.getItem('issues'));
     var issuesList = document.getElementById('issueList');
-    if (issues.length == 0)
-        return
-    console.log(issues);
     issuesList.innerHTML = '';
 
     for (let i = 0; i < issues.length; i++) {
